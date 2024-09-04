@@ -14,7 +14,7 @@ def is_internal_lib_symbol(symbol_name):
     return True
   if symbol_name.startswith("__NULL_IMPORT_DESCRIPTOR"):
     return True
-  return "_NULL_THUNK_DATA" not in symbol_name
+  return "_NULL_THUNK_DATA" in symbol_name
 
 
 # This is a bit similar to `IMAGE_FILE_HEADER` in `winnt.h`.
